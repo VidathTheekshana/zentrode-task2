@@ -1,44 +1,35 @@
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
     },
+# ZENTRODE Product List Task
+
+This is a simple React + TypeScript app that fetches products from an API and displays them with pagination.
+
+## Features
+- Fetches product data from: https://dummyjson.com/products
+- Shows products in a grid (image, title, price)
+- Pagination with Next/Previous buttons
+- Loading and error handling
+
+## Getting Started
+
+1. **Install dependencies:**
+  ```sh
+  npm install
+  ```
+2. **Run the app:**
+  ```sh
+  npm run dev
+  ```
+3. Open your browser to the local URL shown in the terminal (usually http://localhost:5173).
+
+## Project Structure
+- `src/App.tsx` — Main app logic
+- `src/` — Source files
+
+## API Endpoint
+This app uses: https://dummyjson.com/products
+
+## Author
+Vidath Theekshana
   },
 ])
 ```
