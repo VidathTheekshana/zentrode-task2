@@ -1,4 +1,4 @@
-    },
+
 # ZENTRODE Product List Task
 
 This is a simple React + TypeScript app that fetches products from an API and displays them with pagination.
